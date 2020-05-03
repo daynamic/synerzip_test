@@ -3,9 +3,37 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/orange_heading</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="alertDialogTheme">@style/MyAlertDialogTheme</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MyAlertDialogTheme" parent="@style/Theme.AppCompat.Dialog.Alert">
+        <item name="android:textAppearanceSmall">@style/MyTextAppearanceSmall</item>
+        <item name="android:textAppearanceMedium">@style/MyTextAppearanceMedium</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:background">@color/white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Changes covered under PBI 1650 Forgot Password-->
+        <item name="android:textAllCaps">false</item>
+
+    </style>
+
+    <style name="MyTextAppearanceSmall" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/mitrregular</item>
+    </style>
+    <style name="MyTextAppearanceMedium" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/mitrlight</item>
     </style>
 
 </resources>
